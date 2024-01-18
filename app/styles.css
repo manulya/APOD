@@ -21,3 +21,41 @@
   height: 300px;
   object-fit: cover;
 }
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(2, 2, 2) transparent;
+}
+
+/* Для горизонтальной полосы прокрутки */
+/* Chrome, Safari, Opera */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(152, 7, 7) transparent;
+}
+
+/* Цвет и стиль ползунка (бегунка) полосы прокрутки */
+/* Chrome, Safari, Opera */
+::-webkit-scrollbar-thumb {
+  background: rgb(152, 7, 7);
+  border-radius: 5px;
+}
+
+/* Firefox */
+* {
+  scrollbar-color: rgb(152, 7, 7) transparent;
+}
+*:focus {
+  outline-color: rgb(152, 7, 7);
+}

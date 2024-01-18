@@ -11,7 +11,7 @@ import SwiperBlock from "./swaper";
 import "dayjs/locale/en-gb";
 import { Picture } from "./types/picture";
 import { URL } from "./consts";
-
+import "./styles.css";
 export default function Home() {
   const [picture, setPicture] = useState<Picture | null>(null);
   const [picturesRange, setPicturesRange] = useState<Picture[] | null>(null);
@@ -32,7 +32,6 @@ export default function Home() {
         const response = await axios.get<Picture>(
           `${URL}?api_key=${process.env.NEXT_PUBLIC_API_KEY}`
         );
-        console.log(response.data);
         setPicture(response.data);
       } catch (error) {
         console.error("Error fetching picture:", error);
@@ -54,7 +53,6 @@ export default function Home() {
             formattedDate ? `&date=${formattedDate}` : ""
           }`
         );
-        console.log(response.data);
         setPicture(response.data);
       } catch (error) {
         console.error("Error fetching picture:", error);
@@ -81,7 +79,6 @@ export default function Home() {
             formattedStartDate ? `&start_date=${formattedStartDate}` : ""
           }${formattedEndDate ? `&end_date=${formattedEndDate}` : ""}`
         );
-        console.log(response.data);
         setPicturesRange(response.data);
       } catch (error) {
         console.error("Error fetching picture:", error);
@@ -112,7 +109,7 @@ export default function Home() {
           alignItems: "center",
           justifyContent: "start",
           flexDirection: "column",
-          gap: "50px",
+          gap: "40px",
         }}
       >
         <Typography
