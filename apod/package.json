@@ -13,18 +13,21 @@
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.15.5",
     "@mui/styled-engine-sc": "^6.0.0-alpha.12",
+    "@mui/styles": "^5.15.5",
     "@mui/x-date-pickers": "^6.19.0",
     "axios": "^1.6.5",
     "dayjs": "^1.11.10",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "styled-components": "^6.1.8"
+    "styled-components": "^6.1.8",
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/stylis": "^4.2.5",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
     "typescript": "^5"
